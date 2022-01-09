@@ -40,7 +40,7 @@ export default function SignIn() {
       password: data.get('password'),
     };
 
-    axios.post(`${BASE_URL}/login`, dataBody).then(response => response.data)
+    axios.post(`${BASE_URL}/api/user-pondok/auth/login`, dataBody).then(response => response.data)
   };
 
   return (
